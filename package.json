@@ -1,0 +1,22 @@
+{
+  "name": "2020_citizen_engage",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gnits-map-projects/2020_citizen_engage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gnits-map-projects/2020_citizen_engage/issues"
+  },
+  "homepage": "https://github.com/gnits-map-projects/2020_citizen_engage#readme",
+  "description": "",
+  "devDependencies": {
+    "jetifier": "^1.6.6"
+  }
+}
