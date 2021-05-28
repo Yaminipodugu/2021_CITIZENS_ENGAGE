@@ -8,10 +8,10 @@ import { BootstrapTable, TableHeaderColumn } from 'react-bootstrap-table';
 //import { useHistory, withRouter,Link } from "react-router-dom";
 import { PieChart, Pie, Tooltip } from "recharts";
 import Leaderboard from "./Leaderboard.jsx";
-import Cards from "./Cards.jsx";
+import Cards from "./Cardss.jsx";
 import styles from "./Stats.module.css";
 import ActiveRegions from "./ActiveRegions";
-import Chart from "./Chart.jsx";
+import Chartt from "./Chartt.jsx";
 
 const state = {
   labels: ['January', 'February', 'March',
@@ -72,7 +72,7 @@ export default class Statspanel extends Component {
         <br />
         <Cards  />
        
-        <Chart />
+        <Chartt />
       
         <div className="row">
         <div className="col-lg-6">
