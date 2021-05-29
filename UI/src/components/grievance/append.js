@@ -2,7 +2,6 @@
 import React, { Component } from "react";
 import Userhome from './userhome.png';
 import FeedBack from './Feedback';
-import Complaint_registration from "./complaint_registration";
 import './append.css';
 //import Nav from './nav.js';
 import {
@@ -60,7 +59,7 @@ function Update() {
 					}).then(() => {
 						alert('Success!');
 					}).catch((error) => {
-						alert('Successfully submitted', error);
+						alert('we couldn\'t send your feedback ', error);
 					})
 				}
 			
