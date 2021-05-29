@@ -1,5 +1,5 @@
 package controllers;
-//import models.Feedback;
+
 import models.Feedback;
 import models.FeedbackRepository;
 import play.data.FormFactory;
@@ -23,7 +23,7 @@ public class FeedbackController extends Controller{
     @Inject
     public FeedbackController(FormFactory formFactory, FeedbackRepository feedbackRepository, HttpExecutionContext ec) {
         this.formFactory = formFactory;
-        //this.FeedbackRepository = feedbackRepository;
+        this.feedbackRepository = feedbackRepository;
         this.ec = ec;
     }
 
@@ -32,17 +32,17 @@ public class FeedbackController extends Controller{
     }
 
 
-   public  CompletionStage<Result> addFeedback() {
+  public  CompletionStage<Result> addFeedback() {
 
        Feedback feedback= Json.fromJson(request().body().asJson(),Feedback.class);
 
-       return FeedbackRepository.addfeedback(feedback).thenApplyAsync(us -> {
+       return feedbackRepository.addfeedback(feedback).thenApplyAsync(us -> {
 
            return ok();
        }, ec.current());
    }
 
-   /* public CompletionStage<Result> addFeedback() {
+    /*public CompletionStage<Result> addFeedback() {
 
         JsonNode j = request().body().asJson();
         String Name = j.get("name").asText();
