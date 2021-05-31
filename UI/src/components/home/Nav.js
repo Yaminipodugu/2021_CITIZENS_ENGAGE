@@ -67,10 +67,10 @@ class Navigation extends Component {
 
           <Nav.Link href="/deptlogin">DEPARTMENT</Nav.Link>
           <Nav.Link href="/adminlogin">ADMIN</Nav.Link>
-          <Nav.Link href="/about">ABOUT</Nav.Link>
-          <Nav.Link href="/update">COVID UPDATES</Nav.Link>
-          <Nav.Link href="/statspanel">STATS</Nav.Link>
+         <Nav.Link href="/statspanel">STATS</Nav.Link>
           <Nav.Link href="/append">GRIEVANCE</Nav.Link>
+     <Nav.Link href="/update">COVID UPDATES</Nav.Link>
+      <Nav.Link href="/about">ABOUT</Nav.Link>
           
 
           
