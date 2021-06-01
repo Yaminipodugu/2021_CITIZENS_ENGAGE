@@ -33,5 +33,6 @@ POST   /statusPendingComplaints    controllers.ComplaintController.getStatusPend
 POST    /deptIconMap            controllers.ComplaintController.getDeptIconMap
 GET     /waterchartComplaints        controllers.ComplaintController.getWaterChartComplaints
 GET     /garbagechartComplaints      controllers.ComplaintController.getGarbageChartComplaints
+POST    /getfeedback                   controllers.FeedbackController.addFeedback
 GET     /roadchartComplaints         controllers.ComplaintController.getRoadChartComplaints
 GET     /electricitychartComplaints  controllers.ComplaintController.getElectricityChartComplaints
