@@ -20,3 +20,4 @@ Open the browser and type the URL: http://localhost:3000/Home
 
 Open IntelliJ IDEA 
 Run the command: gradlew -Plocal-dev-mode runPlayBinary to run the project.
+
