@@ -99,7 +99,7 @@ class activeRegions extends Component{
                         <div className="header"><h2><u>Active Regions</u></h2></div>
           <BootstrapTable data={ this.state.activeregions } striped hover condensed height='120' scrollTop={ 'Bottom' } >
           <TableHeaderColumn width='100' dataField="any" dataFormat={this.indexN} >Rank</TableHeaderColumn>
-          <TableHeaderColumn  width='150' dataField='Location' dataFormat={this.CellFormatter} isKey >Location</TableHeaderColumn>
+          <TableHeaderColumn  width='250' dataField='Location' dataFormat={this.CellFormatter} isKey >Location</TableHeaderColumn>
           <TableHeaderColumn  width='150' dataField='Count'>No. Of Complaints</TableHeaderColumn>
          
           
