@@ -10,7 +10,7 @@ export default class Nav extends Component{
                     <ul>
                         <li><a href="/adminhome"><i className ="fas fa-home"></i>Home</a></li>
                         <li><a href="/viewcomplaints"><i className="fas fa-address-card"></i>View Complaints</a></li>
-                        <li><a href="/marker"><i className="fas fa-address-card"></i>Map View</a></li>
+                      
                         {/* <li><a href="/pendingcomplaints"><i className="fas fa-blog"></i>Pending Complaints</a></li>
                         <li><a href="/closedcomplaints"><i className="fas fa-address-book"></i>Closed Complaints</a></li> */}
                         <li><a href="/viewusers"><i className="fas fa-address-card"></i>View Users</a></li>
