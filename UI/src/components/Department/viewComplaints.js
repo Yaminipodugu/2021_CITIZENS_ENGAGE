@@ -45,7 +45,7 @@ class viewComplaints extends Component{
     console.log(body);
     
    
-        const url = "http://localhost:9000/getdeptLocationComplaints";
+        const url = "http://localhost:9000/deptComplaints";
           let headers = new Headers();
       
           headers.append('Content-Type','application/json');
