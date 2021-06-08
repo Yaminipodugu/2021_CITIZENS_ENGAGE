@@ -35,7 +35,7 @@ class activeRegions extends Component{
       Category : sessionStorage.getItem("DeptCategory"),
     }
 
-        const url = "http://localhost:9000/activeregions";
+        const url = "http://localhost:9000/deptactiveregions";
           let headers = new Headers();
       
           headers.append('Content-Type','application/json');
