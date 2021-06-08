@@ -117,6 +117,9 @@ public class JPAComplaintRepository implements ComplaintRepository {
     public CompletionStage<Stream<Object>> deptActiveRegions(String Category) {
         return supplyAsync(() -> wrap(em -> deptActiveRegions(em,Category)), executionContext);
     }
+    public CompletionStage<Stream<Complaint>> deptcomplaints(String Category) {
+        return supplyAsync(() -> wrap(em -> deptcomplaints(em,Category)), executionContext);
+    }
     public CompletionStage<Stream<Complaint>> deptLocationComplaints(String location,String category) {
         return supplyAsync(() -> wrap(em -> deptLocationComplaints(em,location,category)), executionContext);
     }
@@ -281,6 +284,10 @@ public class JPAComplaintRepository implements ComplaintRepository {
     }
     private Stream<Complaint> deptLocationComplaints(EntityManager em,String location,String category) {
         List<Complaint> complaint = em.createQuery("select p from Complaint p where Location=:location and Category =: category", Complaint.class).setParameter("location",location).setParameter("category",category).getResultList();
+        return complaint.stream();
+    }
+    private Stream<Complaint> deptcomplaints(EntityManager em,String Category) {
+        List<Complaint> complaint = em.createQuery("select p from Complaint p where p.Category=:Category", Complaint.class).setParameter("Category",Category).getResultList();
         return complaint.stream();
     }
 
