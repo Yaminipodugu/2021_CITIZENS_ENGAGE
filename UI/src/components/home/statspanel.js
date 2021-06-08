@@ -8,7 +8,7 @@ import { BootstrapTable, TableHeaderColumn } from 'react-bootstrap-table';
 //import { useHistory, withRouter,Link } from "react-router-dom";
 import { PieChart, Pie, Tooltip } from "recharts";
 import Leaderboard from "./Leaderboard.jsx";
-import Cards from "./Cardss.jsx";
+import Cardss from "./Cardss.jsx";
 import styles from "./Stats.module.css";
 import ActiveRegions from "./ActiveRegions";
 import Chartt from "./Chartt.jsx";
@@ -70,7 +70,7 @@ export default class Statspanel extends Component {
       <div className={styles.container}>
       <h1><b>STATS PANEL</b></h1>
         <br />
-        <Cards  />
+        <Cardss  />
        
         <Chartt />
       
