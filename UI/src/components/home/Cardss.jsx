@@ -1,11 +1,11 @@
 import React from "react";
 import { Card, CardContent, Typography, Grid } from "@material-ui/core";
-import styles from "./Cards.module.css";
+import styles from "./Cardss.module.css";
 import CountUp from "react-countup";
 import cx from "classnames";
 import { useEffect, useState } from "react";
 
-const Cards = () => {
+const Cardss = () => {
     const [transac,setTransac] = useState([]);
     const[solved,setSolved]=useState([]);
     const[active,setActive]=useState([]);
@@ -162,4 +162,4 @@ const Cards = () => {
   );
 };
 
-export default Cards;
+export default Cardss;
