@@ -240,6 +240,14 @@ public class ComplaintController extends Controller{
             return ok(toJson(complaintStream.collect(Collectors.toList())));
         }, ec.current());
     }
+    public CompletionStage<Result> getDeptComplaints() {
+        JsonNode j = request().body().asJson();
+        String category = j.get("Category").asText();
+        // String category1="Water";
+        return complaintRepository.deptcomplaints(category).thenApplyAsync(complaintStream -> {
+            return ok(toJson(complaintStream.collect(Collectors.toList())));
+        }, ec.current());
+    }
     public CompletionStage<Result> getDeptLocationComplaints() {
         JsonNode j = request().body().asJson();
         String location = j.get("Location").asText();
@@ -257,13 +265,7 @@ public class ComplaintController extends Controller{
             return ok(toJson(complaintStream.collect(Collectors.toList())));
         }, ec.current());
     }
-    public CompletionStage<Result> getDeptComplaints() {
-        JsonNode j = request().body().asJson();
-        String Category = j.get("Category").asText();
-        return complaintRepository.categoryDeptList(Category).thenApplyAsync(complaintStream -> {
-            return ok(toJson(complaintStream.collect(Collectors.toList())));
-        }, ec.current());
-    }
+
     public CompletionStage<Result> getDeptIconMap() {
         JsonNode j = request().body().asJson();
         String Category = j.get("Category").asText();
