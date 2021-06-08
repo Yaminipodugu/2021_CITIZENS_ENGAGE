@@ -29,10 +29,11 @@ GET     /roadComplaints         controllers.ComplaintController.getRoadComplaint
 GET     /electricityComplaints  controllers.ComplaintController.getElectricityComplaints
 POST    /deptactiveregions          controllers.ComplaintController.getDeptActiveRegions
 POST    /deptlocationcomplaints     controllers.ComplaintController.getDeptLocationComplaints
+POST    /deptComplaints            controllers.ComplaintController.getDeptComplaints
 POST   /statusPendingComplaints    controllers.ComplaintController.getStatusPendingComplaints
 POST    /deptIconMap            controllers.ComplaintController.getDeptIconMap
 GET     /waterchartComplaints        controllers.ComplaintController.getWaterChartComplaints
 GET     /garbagechartComplaints      controllers.ComplaintController.getGarbageChartComplaints
-POST    /getfeedback                   controllers.FeedbackController.addFeedback
 GET     /roadchartComplaints         controllers.ComplaintController.getRoadChartComplaints
 GET     /electricitychartComplaints  controllers.ComplaintController.getElectricityChartComplaints
+POST    /getfeedback                   controllers.FeedbackController.addFeedback
