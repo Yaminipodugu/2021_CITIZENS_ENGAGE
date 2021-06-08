@@ -36,6 +36,7 @@ public interface ComplaintRepository {
     CompletionStage<Stream<Complaint>> locationComplaints(String location);
     CompletionStage<Stream<Complaint>> topRankedList(String location,String category);
     CompletionStage<Stream<Object>> deptActiveRegions(String Category);
+    CompletionStage<Stream<Complaint>> deptcomplaints(String Category);
     CompletionStage<Stream<Complaint>> deptLocationComplaints(String location,String Category);
     CompletionStage<Stream<Complaint>> conditionlist1(String Status,String Category);
     //CompletionStage<Stream<Complaint>> conditionStatusList(String Category,String Status);
