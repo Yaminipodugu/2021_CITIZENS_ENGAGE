@@ -96,9 +96,9 @@ class Leaderboard extends Component{
            <div className="main_content">
                         <div className="header"><h2><u>Users LeaderBoard</u></h2></div>
           <BootstrapTable data={ this.state.users } striped hover condensed height='120' scrollTop={ 'Bottom' }>
-          <TableHeaderColumn width='50' dataField="any" dataFormat={this.indexN} isKey>Rank</TableHeaderColumn>
-          <TableHeaderColumn  width='100' dataField='Name'>Name</TableHeaderColumn>
-          <TableHeaderColumn  width='100' dataField='Count'>No. Of Complaints</TableHeaderColumn>
+          <TableHeaderColumn width='100' dataField="any" dataFormat={this.indexN} isKey>Rank</TableHeaderColumn>
+          <TableHeaderColumn  width='250' dataField='Name'>Name</TableHeaderColumn>
+          <TableHeaderColumn  width='150' dataField='Count'>No. Of Complaints</TableHeaderColumn>
          
           
       </BootstrapTable>
