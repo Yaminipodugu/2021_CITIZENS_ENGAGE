@@ -56,7 +56,7 @@ const Cardss = () => {
     setRoad(response);
   };
   const fetchElectricity = async () => {
-    const transacCountfromDb = await fetch("http://localhost:9000/ElectricityComplaints");
+    const transacCountfromDb = await fetch("http://localhost:9000/electricityComplaints");
     const response = await transacCountfromDb.json();
     setElectricity(response);
   };
