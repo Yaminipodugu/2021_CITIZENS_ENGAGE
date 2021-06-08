@@ -4,7 +4,7 @@ body {
   }
   
   .container {
-    display: inline-table;
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
