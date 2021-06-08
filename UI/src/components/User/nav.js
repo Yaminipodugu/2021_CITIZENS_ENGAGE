@@ -17,7 +17,7 @@ export default class Nav extends Component{
                         <li><a href="/user-home"><i className ="fas fa-home"></i>Home</a></li>
                         <li><a href="/complaint"><i className ="fas fa-user"></i>Register Complaint</a></li>
                         <li><a href="/viewusercomplaints"><i className="fas fa-address-card"></i>View Complaints</a></li>
-                        <li><a href="/usermarker"><i className="fas fa-address-card"></i>Map View</a></li>
+                       
                         {/* <li><a href="/pendingusercomplaints"><i className="fas fa-blog"></i>Pending Complaints</a></li>
                         <li><a href="/closedusercomplaints"><i className="fas fa-address-book"></i>Closed Complaints</a></li> */}
                         <li><a href="/profile"><i className="fas fa-address-book"></i>My Profile</a></li>
