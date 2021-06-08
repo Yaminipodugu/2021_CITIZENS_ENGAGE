@@ -15,8 +15,8 @@ In order to execute the project files following are the steps:
 Create the frontend app with the command: create-react-app [projectFrontendName]
 Navigate to ‘ui’ folder of the project.
 Run the command: npm install. This will install all the necessary packages for the frontend of the project.
-Run the command:npm install --save axios react-chartjs-2 react-countup classnames @material-ui/core  
-Run the command:npm install rating 
+Run the command:npm install --save axios react-chartjs-2 react-countup classnames @material-ui/core for covid updates module. 
+Run the command:npm install rating for grievance. 
 Run the command: npm start to start the project. This will open the project on port 3000.
 Open the browser and type the URL: http://localhost:3000/Home
 
